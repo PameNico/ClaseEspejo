@@ -1,7 +1,7 @@
 # ClaseEspejo
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-Necesitamos hacer todas estas pantallas para tener completo el proyecto:
+Hace falta lo siguiente:
     1. Ingreso (index.html)
   
   
