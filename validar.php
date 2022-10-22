@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Log In</title>
+	<title>Inicio de sesión</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -30,31 +30,19 @@
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="validar.php" method="post">
-					<span class="login100-form-title">Iniciar sesión</span>
+				<form class="login100-form validate-form p-l-55 p-r-55 p-t-178" action="profile.html" method="post">
+                <input type="hidden" name="nick" value="<?php echo $usuario; ?>">
 
-					<div class="wrap-input100 validate-input m-b-16" data-validate="Ingresa el usuario">
-						<input class="input100" type="text" name="user" placeholder="Usuario">
-						<span class="focus-input100"></span>
-					</div>
+                <input type="hidden" name="pass" value="<?php echo $contra; ?>">
+                <span class="login100-form-title">Bienvenido usuario!</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Ingresa la contraseña">
-						<input class="input100" type="password" name="pass" placeholder="Contraseña">
-						<span class="focus-input100"></span>
-					</div>
+                <?php
+                $usuario= $_POST["user"];
+                
+                $password= $_POST["pass"];
+                $serverName = "localhost";
 
-					<div class="text-right p-t-13 p-b-23"><span class="txt1">Olvidaste tu </span>
-						<a href="#" class="txt2">Usuario / Contraseña</a>
-					</div>
-
-					<div class="login100-form-btn">
-						<button class="login100-form-btn txt1" type="submit">Iniciar sesión</button>
-					</div>
-
-					<div class="flex-col-c p-t-170 p-b-40">
-						<span class="txt1 p-b-9">No tienes cuenta?</span>
-						<a href="#" class="txt3">Registrate ahora</a>
-					</div>
+                a
 				</form>
 			</div>
 		</div>
